@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bamawal · AI哲学问答</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="hero">
+        <p class="badge">bamawal</p>
+        <h1>AI哲学智能问答</h1>
+        <p class="subtitle">从 AI / 数学视角，讨论人文与人类问题。</p>
+      </header>
+
+      <main>
+        <section class="panel" aria-label="问答输入区">
+          <label for="question">输入你的问题</label>
+          <textarea
+            id="question"
+            placeholder="例如：如果意识可以被计算，人文价值还重要吗？"
+            rows="5"
+          ></textarea>
+          <div class="actions">
+            <button id="askBtn" type="button">生成回答</button>
+            <button id="clearBtn" type="button" class="ghost">清空</button>
+          </div>
+          <p class="tip">提示：支持关键词如“意识 / 自由 / 伦理 / 艺术 / 教育 / 意义”。</p>
+        </section>
+
+        <section class="panel" aria-live="polite" aria-label="回答区域">
+          <h2>回答</h2>
+          <article id="answer" class="answer-card">
+            我是 <strong>bamawal</strong>。你可以问我：
+            “数学模型如何理解人的自由？”
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
